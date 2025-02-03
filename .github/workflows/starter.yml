@@ -35,6 +35,7 @@ jobs:
       - run: cd backend && npm test
 
       # Run the linter.
+      - run: cd backend && npm install eslint --save-dev
       - run: cd backend && npm init @eslint/config
       - run: cd backend && npm run lint
 
